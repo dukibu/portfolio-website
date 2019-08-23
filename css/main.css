@@ -1,0 +1,594 @@
+/* -------------------------------------------------------------
+    Color Palette 
+   ------------------------------------------------------------- */
+
+/*    
+  #1e9fb4 - blue-green;
+  #04080f - rich black(fogra29);
+  #f9f9f9 - snow;
+  #507dbc - cyan azure;
+  #292f36 - gunmetal;
+*/
+
+/* -------------------------------------------------------------
+    Global Styles
+   ------------------------------------------------------------- */
+
+/*
+ * Box-sizing Reset
+ */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Esteban', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 0;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.2em;
+  text-align: left;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.nav-wrap,
+.content-wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/*
+ * Basic button style
+ */
+
+.btn {
+  width: 134px;
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background-color: #1e9fb4;
+  border: 1px solid #1e9fb4;
+  transition: ease-in-out 1s;
+}
+
+/*
+ * Browser Upgrade Prompt
+ */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #f9f9f9;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* -------------------------------------------------------------
+    Header
+   ------------------------------------------------------------- */
+
+header {
+  background: #04080f;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* -------------------------------------------------------------
+    Navigation
+   ------------------------------------------------------------- */
+
+/*
+ * Logo
+ */
+
+.logo {
+  display: block;
+  padding: 0.37em 1em;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/*
+ * Menu Icon
+ */
+
+.menu-icon img {
+  position: absolute;
+  top: 0.74em;
+  right: 2em;
+  width: 34px;
+  cursor: pointer;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar {
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 -8px 0 0;
+  max-height: 0;
+  transition: max-height ease-in-out 0.8s;
+}
+
+.navbar ul.show {
+  max-height: 20em;
+  transition: max-height ease-in-out 0.8s;
+}
+
+.navbar a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1.3em 2em;
+}
+
+.navbar a:hover {
+  background: #292f36;
+}
+
+.active a {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* -------------------------------------------------------------
+    Main
+   ------------------------------------------------------------- */
+
+.about,
+.services,
+.portfolio,
+.contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.about h2,
+.services h2,
+.portfolio h2,
+.contact h2 {
+  padding-bottom: 80px;
+}
+
+/*
+ * Hero
+ */
+
+.hero {
+  background: linear-gradient(rgba(4, 8, 15, 0.8), rgba(4, 8, 15, 0.8)),
+    url(../images/hero-image.jpg) no-repeat fixed;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero .content-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.hero h1,
+.hero p {
+  color: #f9f9f9;
+}
+
+.hero h1 {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  color: #1e9fb4;
+}
+
+/*
+ * About
+ */
+
+.about {
+  background-color: #1e9fb4;
+  display: flex;
+  flex-direction: column;
+}
+
+.about .content-wrap {
+  text-align: center;
+  padding: 10px 30px 30px 30px;
+}
+
+.about p {
+  text-align: left;
+  padding-top: 18px;
+}
+
+/*
+ * Services
+ */
+
+.services {
+  background-color: #efefef;
+}
+
+.single-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.services img {
+  width: 50px;
+}
+
+.single-service .btn {
+  border: 2px solid #1e9fb4;
+  color: #1e9fb4;
+  margin-top: 20px;
+}
+
+.single-service .btn:hover {
+  color: #fff;
+}
+
+/*
+ * Portfolio
+ */
+
+.portfolio {
+  background-color: #1e9fb4;
+}
+
+.portfolio .content-wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 25px;
+}
+
+.portfolio .single-img {
+  position: relative;
+  text-align: center;
+  padding-top: 5px;
+}
+
+a.single-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  opacity: 1;
+}
+
+/*
+ * Contact
+ */
+
+.contact {
+  background-color: #f9f9f9;
+  color: #08090a;
+}
+
+.contact h3 {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.social-media-icon img {
+  width: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+input:invalid,
+textarea:invalid {
+  box-shadow: none;
+}
+
+.form-fields input[type='text'],
+.form-fields input[type='email'] {
+  padding: 0.6em 0.8em;
+  color: #000;
+  background: #f9f9f9;
+  border: 1px solid #000;
+  width: 80%;
+  margin: 10px 0 10px 0;
+}
+
+.form-fields textarea {
+  width: 80%;
+  height: 6em;
+  padding: 0.6em 0.8em;
+  color: #000;
+  background: #f9f9f9;
+  border: 1px solid #000;
+  margin: 10px 0 10px 0;
+}
+
+.form-fields input[type='text']:focus,
+.form-fields input[type='email']:focus,
+.form-fields textarea:focus {
+  color: #000;
+  border: 1px solid #000;
+  outline: none;
+  background: #f9f9f9;
+}
+
+.contact .btn {
+  width: 80%;
+  border: 1px solid #000;
+  color: #08090a;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------------
+    Footer
+   ------------------------------------------------------------- */
+footer {
+  background-color: #08090a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 5em;
+  padding: 50px;
+}
+
+footer p {
+  color: #f9f9f9;
+}
+
+/* -------------------------------------------------------------
+    Helpers classes
+   ------------------------------------------------------------- */
+
+/* -------------------------------------------------------------
+    Media Queries
+   ------------------------------------------------------------- */
+
+@media only screen and (min-width: 56em) {
+  /*
+   * Global (min-width: 56em)
+   */
+
+  .about,
+  .services,
+  .portfolio,
+  .contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+
+  /*
+   * Navigation (min-width: 56em)
+   */
+
+  .nav-wrap {
+    position: relative;
+  }
+
+  a.logo {
+    position: absolute;
+    padding: 0;
+    top: 0.37em;
+    left: 1em;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .navbar {
+    height: auto;
+    min-height: 60px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbar ul {
+    display: flex;
+  }
+
+  /*
+   * Hero (min-width: 56em)
+   */
+
+  .hero .content-wrap {
+    align-items: flex-start;
+    padding: 0 0 0 30px;
+  }
+
+  .hero h1 {
+    font-size: 3em;
+  }
+
+  .hero p {
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin-top: 10px;
+  }
+
+  /*
+   * About (min-width: 56em)
+   */
+
+  .about h2 {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  .about .content-wrap,
+  .services .content-wrap,
+  .portfolio .content-wrap,
+  .contact .content-wrap {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about .container {
+    flex-basis: 50%;
+    padding: 2em 4em 2em 0;
+    text-align: left;
+  }
+
+  .about-img {
+    width: 50%;
+    padding-top: 50px;
+  }
+
+  /*
+   * Services (min-width: 56em)
+   */
+
+  .services h2 {
+    padding-bottom: 100px;
+  }
+
+  .services .content-wrap {
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 0;
+  }
+
+  .single-service {
+    text-align: center;
+    flex-basis: 33.33%;
+  }
+
+  /*
+   * Portfolio (min-width: 56em)
+   */
+
+  .portfolio h2 {
+    padding-bottom: 100px;
+  }
+
+  .portfolio .content-wrap {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 0;
+  }
+
+  .portfolio .single-img {
+    flex-basis: 33.33%;
+    padding: 0;
+  }
+
+  .portfolio a:hover {
+    opacity: 1;
+    transition: 1s;
+  }
+
+  .portfolio .single-img:hover {
+    opacity: 0.2;
+    transition: 1s;
+  }
+
+  /*
+   * Contact (min-width: 56em)
+   */
+
+  .contact h2 {
+    padding-bottom: 100px;
+  }
+
+  .contact section {
+    flex: 1 0 50%;
+  }
+
+  .contact .contact-info {
+    padding-right: 30px;
+  }
+
+  .contact h4 {
+    padding-top: 18px;
+    margin-bottom: 10px;
+  }
+
+  .contact p {
+    margin: 0;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+  }
+
+  /*
+   * Footer (min-width: 56em)
+   */
+
+  footer p {
+    font-size: 1.5em;
+  }
+}

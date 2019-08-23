@@ -1,0 +1,19 @@
+1. hero-image Photo by rawpixel.com from Pexels;
+2. about-image Photo by rawpixel.com from Pexels;
+3. marketing-icon by fontawesome.com from Font Awesome;
+4. desktop-icon by fontawesome.com from Font Awesome;
+5. mobile-icon by fontawesome.com from Font Awesome; 
+6. eye-icon by fontawesome.com from Font Awesome;
+7. twitter-icon by fontawesome.com from Font Awesome; 
+8. facebook-icon by fontawesome.com from Font Awesome;
+9. instagram-icon by fontawesome.com from Font Awesome;
+10. linkedin-icon by fontawesome.com from Font Awesome; 
+11. menu-icon by fontawesome.com from Font Awesome;    
+12. project-computer image Photo by DESIGNECOLOGIST on Unsplash;
+13. project-marketing image Photo by Helloquence on Unsplash;
+14. project-seo image Photo by Luke Chesser on Unsplash;
+15. project-app image Photo by Rahul Chakraborty on Unsplash;
+16. project-app-service image Photo by Paul Hanaoka on Unsplash;
+17. project-fashion image Photo by Tamara Bellis on Unsplash;
+
+
