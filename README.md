@@ -6,6 +6,6 @@
 
 ![Desktop](readme-images/desktop-image.jpg)
 
-### Moble Version
+### Mobile Version
 
 ![Mobile Phone](readme-images/mobile-phone-image.png)
